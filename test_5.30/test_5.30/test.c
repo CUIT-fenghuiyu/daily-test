@@ -220,49 +220,74 @@
 ///******end******/
 //}
 
-#include <stdio.h>
-#include <string.h>
-
-int GetWords(char *sentence, char *words[]);
-void SortStrings(const char *strs[], int count);
-
-int main()
-{
-	char str[200];
-	int nWords = 0;
-	char *words[20];
-	int i;
-
-	printf("input a string: ");
-	gets(str);
-
-	nWords = GetWords(str, words);
-	SortStrings(words, nWords);
-
-	puts("output:");
-	for (i = 0; i<nWords; i++)
-		puts(words[i]);
-
-	return 0;
-}
-
-
-int GetWords(char *str, char *words[])
-{
-	/******start******/
-	int nWords;
-	while (*str)
-	{
-
-	}
-
-	return nWords;
-	/******end******/
-}
-
-void SortStrings(const char *strs[], int count)
-{
-	/******start******/
-
-	/******end******/
-}
+//#include <stdio.h>
+//#include <string.h>
+//
+//int GetWords(char *sentence, char *words[]);
+//void SortStrings(const char *strs[], int count);
+//
+//int main()
+//{
+//	char str[200];
+//	int nWords = 0;
+//	char *words[20];
+//	int i;
+//
+//	printf("input a string: ");
+//	gets(str);
+//
+//	nWords = GetWords(str, words);
+//	SortStrings(words, nWords);
+//
+//	puts("output:");
+//	for (i = 0; i<nWords; i++)
+//		puts(words[i]);
+//
+//	return 0;
+//}
+//
+//
+//int GetWords(char *str, char *words[])
+//{
+//	/******start******/
+//	int nWords = 0;
+//	char* p = str;
+//	int n = 1;
+//	while (n)
+//	{
+//		while (*str != ' ' && *str != '.')
+//		{
+//			str++;
+//		}
+//		if (*str == '.')
+//		{
+//			n = 0;
+//		}
+//		*str = '\0';
+//		words[nWords++] = p;
+//		str++;
+//		p = str;
+//	}
+//	return nWords;
+//	/******end******/
+//}
+//
+//void SortStrings(const char *strs[], int count)
+//{
+//	/******start******/
+//	int i = 0 , j = 0;
+//	const char* w;
+//	for (i = 0; i < count; i++)
+//	{
+//		for (j = i + 1; j < count; j++)
+//		{
+//			if (strcmp(strs[i], strs[j]) > 0)
+//			{
+//				w = strs[i];
+//				strs[i] = strs[j];
+//				strs[j] = w;
+//			}
+//		}
+//	}
+//	/******end******/
+//}
